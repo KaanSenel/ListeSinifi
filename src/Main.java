@@ -13,12 +13,8 @@ public class Main {
         System.out.println("Size : "+myList.size());
         System.out.println("Kapasite : " +myList.getCapacity());
         System.out.println(myList.toString());
-        myList.add(44);
-        myList.set(6,-123);
-        System.out.println(myList);
-        System.out.println(myList.contains(-123));
-        myList.clear();
-        System.out.println(myList.toString());
-        System.out.println(myList.isEmpty());
+        MyList<Integer> myList1;
+        myList1=myList.subList(3,7);
+        System.out.println(myList1);
     }
 }

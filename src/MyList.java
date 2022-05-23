@@ -131,13 +131,13 @@ public class MyList <T>{
         this.array=(T[]) new Object[getCapacity()];
     }
 
-    public ArrayList<T> subList(int start, int finish){
+    public MyList<T> subList(int start, int finish){
         if(start>finish){
             int temp=finish;
             finish=start;
             start=temp;
         }
-        ArrayList<T> list=new ArrayList<>();
+        MyList<T> list=new MyList<>(finish-start+1);
         for(int i=start;i<=finish;i++){
             list.add(this.array[i]);
             System.out.println("ss");
